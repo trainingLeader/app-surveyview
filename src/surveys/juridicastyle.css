@@ -128,6 +128,74 @@ h2 {
     color: #f97316;
     margin-bottom: 1rem;
   }
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  .responsive-table th,
+  .responsive-table td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .responsive-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .responsive-table,
+    .responsive-table thead,
+    .responsive-table tbody,
+    .responsive-table th,
+    .responsive-table td,
+    .responsive-table tr {
+      display: block;
+    }
+    .responsive-table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .responsive-table tr {
+      border: 1px solid #ccc;
+      margin-bottom: 0.5rem;
+    }
+    .responsive-table td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    .responsive-table td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+  .text-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .checkbox-input {
+    width: 1rem;
+    height: 1rem;
+  }
   @media (max-width: 640px) {
     .container {
       padding: 0.5rem;
