@@ -1,0 +1,147 @@
+
+:root {
+    display: block;
+    font-family: Arial, sans-serif;
+    --primary-color: #00205B;
+    --secondary-color: #003080;
+    --background-color: #f9fafb;
+    --border-color: #d1d5db;
+    --text-color: #333;
+    --error-color: #ef4444;
+}
+h2 {
+    background-color: #00205B;
+    color: white;
+    padding: 0.5rem;
+    margin: 1rem -1rem;
+    font-size: 1.1rem;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--background-color);
+    transition: all 0.2s;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  input[type="text"]:hover {
+    border-color: #b6b5b6;
+  }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 32, 91, 0.2);
+  }
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .radio-option {
+    display: flex;
+    align-items: center;
+  }
+  .radio-option input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  .text-orange {
+    color: #f97316;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .short-input {
+    max-width: 150px;
+  }
+  button:hover {
+    background-color: #003080;
+  }
+  button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  .text-orange {
+    color: #f97316;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .short-input {
+    max-width: 150px;
+  }
+  .education-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+  }
+  .education-table td {
+    padding: 0.25rem;
+  }
+  .chapter-title {
+    background-color: #00205B;
+    color: white;
+    padding: 0.5rem;
+    margin: 1rem -1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .chapter-description {
+    font-style: italic;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 640px) {
+    .container {
+      padding: 0.5rem;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    input[type="text"], button {
+      font-size: 0.9rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+}
